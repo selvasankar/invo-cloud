@@ -1,0 +1,27 @@
+# .gitattributes - normalize line endings and treat binary files properly
+
+# text files — normalize to LF in the repository and let git handle checkouts
+* text=auto
+
+# Explicitly force certain file types to use LF in repo and in checkouts
+*.sh     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.md     text eol=lf
+*.json   text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.js     text eol=lf
+*.jsx    text eol=lf
+*.css    text eol=lf
+*.html   text eol=lf
+
+# Binary files — keep as-is
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.zip  binary
+*.woff binary
+*.woff2 binary
+*.pdf  binary
